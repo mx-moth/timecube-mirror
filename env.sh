@@ -30,7 +30,7 @@ WGET="wget
 	--output-file=${LOG_FILE}
 	--no-verbose
 	--mirror
-	--domains='${ALLOWED_DOMAINS}'
+	--domains=${ALLOWED_DOMAINS}
 	--span-hosts
 	--"
 
