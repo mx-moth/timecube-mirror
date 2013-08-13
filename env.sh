@@ -10,6 +10,11 @@ function join() {
 	return 0
 }
 
+function die() {
+	echo -e "$2"
+	exit $1
+}
+
 ENDPOINT_DOMAIN="www.timecube.com"
 ALLOWED_DOMAINS=( \
 	"timecube.com" \
@@ -33,5 +38,6 @@ WGET="wget
 	--domains=${ALLOWED_DOMAINS}
 	--span-hosts
 	--"
+
 
 GIT_SSH="ssh -i '${HERE}/deployment-key'"
